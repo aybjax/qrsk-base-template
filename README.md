@@ -1,3 +1,10 @@
+# update checker periodically
+mvn versions:use-latest-versions -Dincludes="io.github.eisop:*"
+
+see: https://eisop.github.io/cf/manual/manual.html#maven
+
+--------------------------------
+
 # qrks-learn
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
