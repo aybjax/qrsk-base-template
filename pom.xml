@@ -122,6 +122,7 @@
     <profiles>
         <profile>
             <id>native</id>
+            <!-- run mvn with "-P nullcheck" -->
             <activation>
                 <property>
                     <name>native</name>
@@ -136,10 +137,10 @@
         <!-- Checker framework -->
         <profile>
             <id>nullcheck</id>
-            <!-- If you omit the activation block, run mvn with "-P nullcheck" to run checkers. -->
-            <activation>
-                <jdk>[9,)</jdk>
-            </activation>
+            <!-- run mvn with "-P nullcheck" -->
+<!--            <activation>-->
+<!--                <jdk>[9,)</jdk>-->
+<!--            </activation>-->
             <build>
                 <plugins>
                     <plugin>
